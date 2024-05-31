@@ -5,7 +5,7 @@ import { connectItems } from "@/constant";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 const Profile = () => {
   return (
-    <div className="flex gap-2 flex-row md:flex-col min-w-fit items-center">
+    <div className="flex gap-2 flex-row md:flex-col min-w-fit md:items-start items-center">
       <div className="pointer-events-none relative h-[45px] w-[45px] rounded-full overflow-hidden md:h-[170px] md:w-[170px] md:border-2 md:border-gray-500">
         <Image
           src={profileImg}
@@ -33,10 +33,7 @@ const Profile = () => {
       <div className="hidden md:block">
         <ul>
           {connectItems.map((item, idx) => (
-            <li
-              key={idx}
-              className="text-sm text-gray-500 mb-1 flex items-center gap-x-2"
-            >
+            <li key={idx} className="text-sm text-gray-500 mb-1 flex gap-x-2">
               <div className="w-[14px] h-[14px]">
                 <FontAwesomeIcon icon={item.icon} />
               </div>

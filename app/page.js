@@ -1,6 +1,6 @@
 export default function Home() {
   return (
-    <div className="text-justify text-lg mt-6 md:mt-0">
+    <div className="text-justify text-lg mt-6 mb-4 md:mt-0">
       <p>Hello!👋</p>
       <p className="mt-3">
         This is Md Atiqur Rahman. I was a former Junior Software Engineer at{" "}
@@ -20,7 +20,7 @@ export default function Home() {
         >
           Ahsanullah University of Science and Technology
         </a>
-        . I graduated from the same university with a Bachelor's degree in
+        . I graduated from the same university with a Bachelor&apos;s degree in
         Computer Science and Engineering. I am a passionate programmer with
         expertise in C, C++, and Python. I have hands-on experience in robotics
         and have completed various projects. I am very much interested in the

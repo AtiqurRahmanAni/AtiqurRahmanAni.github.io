@@ -9,6 +9,7 @@ import {
   faOrcid,
   faResearchgate,
   faSteam,
+  faYoutube,
 } from "@fortawesome/free-brands-svg-icons";
 import {
   faEnvelope,
@@ -63,6 +64,11 @@ export const connectItems = [
     name: "Steam",
     link: "https://steamcommunity.com/id/atiqur99",
     icon: faSteam,
+  },
+  {
+    name: "YouTube",
+    link: "https://www.youtube.com/@codingwitharduino7558",
+    icon: faYoutube,
   },
 ];
 
@@ -177,5 +183,69 @@ export const honours = [
     title: "Winner of Building Standalone Applications using MATLAB",
     certificate:
       "https://drive.google.com/file/d/1rXVJTt6tCaeGwfaaoVJRq8GpL8r8v6ph/view",
+  },
+];
+
+export const courseCompletedItems = [
+  {
+    title: "Python Beginner Course, Coursera",
+    certificate:
+      "https://drive.google.com/file/d/1jPhY4_ULVy-x_Fyzkvl3rZz2sFqlWmUg/view",
+  },
+  {
+    title:
+      "Arduino Fundamentals certification on Electronics and Physical Computing, Arduino",
+    certificate:
+      "https://drive.google.com/file/d/13r9n7dEPSAgpcZ90mtKTd43Gc_R-LQeN/view",
+  },
+];
+
+export const projectItems = [
+  {
+    title: "Robo-Waiter",
+    description:
+      "A robot waiter which is capable of delivering food to the customer autonomously",
+    gitLink: "https://github.com/AtiqurRahmanAni/Robo-Waiter",
+    demoLink: "https://www.youtube.com/watch?v=fkcC4ygjQmU",
+    embedLink: "https://www.youtube.com/embed/fkcC4ygjQmU?si=ZAyq3Pba_lxZJnfJ",
+  },
+  {
+    title: "JobSeeker Web",
+    description: "A medium between freelancers and hirers in Bangladesh",
+    gitLink: "https://github.com/TeamAugmentors/JobseekerWeb",
+    demoLink: "https://www.youtube.com/watch?v=PN0mgFHmdnI",
+    embedLink: "https://www.youtube.com/embed/PN0mgFHmdnI?si=itXYISlAwiO6GX6d",
+  },
+  {
+    title: "JobSeeker",
+    description:
+      "A user friendly and easy to use android app for freelancing where people can post their requirements and freelancers can accept the job they are interested in",
+    gitLink: "https://github.com/TeamAugmentors/JobSeeker",
+    demoLink: "https://www.youtube.com/watch?v=YYKiquIiLZ4",
+    embedLink: "https://www.youtube.com/embed/YYKiquIiLZ4?si=X6VX2raWQBma3yni",
+  },
+  {
+    title: "Vaccine Distribution System",
+    description:
+      "A database management system for managing Covid-19 vaccines and tracking",
+    gitLink: "https://github.com/TeamAugmentors/VaccineDistributionSystem",
+    demoLink: "https://www.youtube.com/watch?v=3LjfySrpGjM",
+    embedLink: "https://www.youtube.com/embed/3LjfySrpGjM?si=O5H9q9MQW03xsAI8",
+  },
+  {
+    title: "Alice",
+    description:
+      "A fun to use Java application consisting of Tic Tac Toe, Hangman and Snake games",
+    gitLink: "https://github.com/TeamAugmentors/SD-Project",
+    demoLink: "https://www.youtube.com/watch?v=HxwJTcHEUoY",
+    embedLink: "https://www.youtube.com/embed/HxwJTcHEUoY?si=kxjO4e8oXJ152wIC",
+  },
+  {
+    title: "Arrival",
+    description:
+      "Arrival is a survival game taking place in the space. It is an infinite scrolling game continuously defending two objects, the player’s spacecraft and the earth",
+    gitLink: null,
+    demoLink: "https://www.youtube.com/watch?v=hKz_J2qHpe4",
+    embedLink: "https://www.youtube.com/embed/hKz_J2qHpe4?si=u5IWprMg_SKiRIDA",
   },
 ];

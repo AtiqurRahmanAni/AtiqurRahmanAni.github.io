@@ -1,3 +1,4 @@
+import ClickableLink from "@/components/ClickableLink";
 import Section from "@/components/Section";
 import { educationItems } from "@/constant";
 import Image from "next/image";
@@ -30,33 +31,13 @@ const Education = () => {
               <p>{item.degree}</p>
               <p>
                 {item.major}{" "}
-                <span>
-                  [
-                  <a
-                    className="text-[#52adc8] font-semibold hover:underline hover:underline-offset-2"
-                    href={item.certificate}
-                    target="_blank"
-                  >
-                    Certificate
-                  </a>
-                  ]
-                </span>
+                <ClickableLink linkText="Certificate" link={item.certificate} />
               </p>
               <p>{item.duration}</p>
               <p>
                 {item.result}{" "}
                 {item.transcript && (
-                  <span>
-                    [
-                    <a
-                      className="text-[#52adc8] font-semibold hover:underline hover:underline-offset-2"
-                      href={item.transcript}
-                      target="_blank"
-                    >
-                      Transcript
-                    </a>
-                    ]
-                  </span>
+                  <ClickableLink linkText="Transcript" link={item.transcript} />
                 )}
               </p>
             </div>

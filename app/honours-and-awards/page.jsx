@@ -1,33 +1,41 @@
+import ClickableLink from "@/components/ClickableLink";
 import Section from "@/components/Section";
-import { honours } from "@/constant";
+import { courseCompletedItems, honours } from "@/constant";
 import React from "react";
 
 const Honours = () => {
   return (
-    <Section heading="Honours & Awards">
-      <div className="mt-4">
-        <ul className="space-y-1.5 text-lg list-disc list-inside">
+    <div>
+      <Section heading="Honours & Awards" className="text-2xl">
+        <ul className="mt-4 space-y-1.5 text-lg list-disc list-inside">
           {honours.map((item, idx) => (
-            <li key={idx} className="indent-2 list-item">
+            <li key={idx}>
               {item.title}{" "}
               {item.certificate && (
-                <span>
-                  [
-                  <a
-                    href={item.certificate}
-                    className="text-[#52adc8] font-semibold hover:underline hover:underline-offset-2"
-                    target="_blank"
-                  >
-                    Certificate
-                  </a>
-                  ]
-                </span>
+                <ClickableLink linkText="Certificate" link={item.certificate} />
               )}
             </li>
           ))}
         </ul>
-      </div>
-    </Section>
+      </Section>
+      <Section heading="Extracurricular Activities" className="text-2xl">
+        <ul className="mt-4 space-y-1.5 text-lg list-disc list-inside">
+          <li>Organizer of AUST CSE Festival Fall 2021</li>
+        </ul>
+      </Section>
+      <Section heading="Course Completed" className="text-2xl">
+        <ul className="mt-4 space-y-1.5 text-lg list-disc list-inside">
+          {courseCompletedItems.map((item, idx) => (
+            <li key={idx}>
+              {item.title}{" "}
+              {item.certificate && (
+                <ClickableLink linkText="Certificate" link={item.certificate} />
+              )}
+            </li>
+          ))}
+        </ul>
+      </Section>
+    </div>
   );
 };
 
