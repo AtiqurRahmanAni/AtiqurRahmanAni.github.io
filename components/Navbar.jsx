@@ -28,7 +28,7 @@ const Navbar = () => {
       className="fixed top-0 left-0 w-full flex justify-center items-center border border-b-gray-500/10 lg:flex-row flex-col p-6 z-10 bg-white"
       ref={navbarRef}
     >
-      <div className="font-semibold text-gray-500 text-lg">
+      <div className="font-semibold text-gray-500 text-lg xl:mr-20">
         Md Atiqur Rahman
       </div>
       <ul
