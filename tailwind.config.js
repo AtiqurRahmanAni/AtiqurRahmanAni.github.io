@@ -15,6 +15,20 @@ module.exports = {
       transitionProperty: {
         "max-height": "max-height",
       },
+      fontFamily: {
+        custom: [
+          "-apple-system",
+          "BlinkMacSystemFont",
+          '"SFNSText-Regular"',
+          '"San Francisco"',
+          '"Roboto"',
+          '"Segoe UI"',
+          '"Helvetica Neue"',
+          '"Lucida Grande"',
+          "Arial",
+          "sans-serif",
+        ],
+      },
     },
   },
   plugins: [],

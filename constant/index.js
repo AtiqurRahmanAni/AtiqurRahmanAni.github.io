@@ -8,6 +8,7 @@ import {
   faLinkedin,
   faOrcid,
   faResearchgate,
+  faStackOverflow,
   faSteam,
   faYoutube,
 } from "@fortawesome/free-brands-svg-icons";
@@ -69,6 +70,11 @@ export const connectItems = [
     name: "YouTube",
     link: "https://www.youtube.com/@codingwitharduino7558",
     icon: faYoutube,
+  },
+  {
+    name: "Stack Overflow",
+    link: "https://stackoverflow.com/users/11562384/atikur-rahman",
+    icon: faStackOverflow,
   },
 ];
 
@@ -254,74 +260,64 @@ export const publicationItems = [
   {
     year: 2023,
     publications: [
-      <>
-        <strong>
-          Informational Query Detection on Social Media Posts in Bengali
-          Language Using Machine Learning And Transfer Learning Techniques.
-        </strong>{" "}
-        <span>Md. Atiqur Rahman, S. I. C.; and Sadid Rafan, N. J.</span>{" "}
-        <span>
-          In{" "}
-          <span className="italic">
-            2023 IEEE 13th Annual Computing and Communication Workshop and
-            Conference (CCWC)
-          </span>
-          , pages 0458–0464, 2023.
-        </span>
-      </>,
-      <>
-        <strong>
-          Evaluating the Reliability of CNN Models on Classifying Traffic and
-          Road Signs using LIME.
-        </strong>{" "}
-        <span>
-          Md. Atiqur Rahman, A. S. T.; Sanjid Islam, F. P.; and G.M. Shahariar,
-          M. T. R. S.
-        </span>{" "}
-        <span>
-          In <span className="italic">arXiv preprint arXiv:2309.05747</span>,
-          2023.
-        </span>
-      </>,
-      <>
-        <strong>
-          Bengali News Abstractive Summarization: T5 Transformer and Hybrid
-          Approach.
-        </strong>{" "}
-        <span>
-          Hasib, K. M.; Rahman, M. A.; Masum, M. I.; De Boer, F.; Azam, S.; and
-          Karim, A.
-        </span>{" "}
-        <span>
-          In{" "}
-          <span className="italic">
-            2023 International Conference on Digital Image Computing: Techniques
-            and Applications (DICTA)
-          </span>
-          , pages 539–545, 2023. IEEE
-        </span>
-      </>,
+      {
+        paperTitle:
+          "Informational Query Detection on Social Media Posts in Bengali Language Using Machine Learning And Transfer Learning Techniques.",
+        authors: "Md. Atiqur Rahman, S. I. C.; and Sadid Rafan, N. J",
+        conference:
+          "2023 IEEE 13th Annual Computing and Communication Workshop and Conference (CCWC)",
+        extra: "pages 0458–0464, 2023",
+        paperLink: "https://ieeexplore.ieee.org/document/10099305/",
+        abstract:
+          "Informational Queries are those queries or questions where a user's goal is to get an answer or fact to a specific question or to find a relevant piece of information. In recent years, social media has become an important platform for people to seek knowledge, data, and information from others. However, the vast amount of information on social media makes it difficult to identify and prioritize posts that are specifically informational queries. This paper presents machine learning and transfer learning methods for detecting informational queries on social media in the Bengali language using natural language processing and machine learning techniques. The approach involves analyzing the text of posts to identify keywords and phrases commonly used in informational queries and using this information to train machine learning classifiers, including transfer learning models. The method was evaluated on a dataset of real-world Bengali social media posts and was effective in accurately identifying posts that are informational queries with high precision and recall. This work aims to assist organizations and individuals in providing support to individuals seeking information, data, and knowledge on social media, particularly in low-resource languages.",
+      },
+      {
+        paperTitle:
+          "Evaluating the Reliability of CNN Models on Classifying Traffic and Road Signs using LIME.",
+        authors:
+          "Md. Atiqur Rahman, A. S. T.; Sanjid Islam, F. P.; and G.M. Shahariar, M. T. R. S.",
+        conference: "arXiv preprint arXiv:2309.05747",
+        extra: "2023",
+        paperLink: "https://arxiv.org/abs/2309.05747",
+        abstract:
+          "The objective of this investigation is to evaluate and contrast the effectiveness of four state-of-the-art pre-trained models, ResNet-34, VGG-19, DenseNet-121, and Inception V3, in classifying traffic and road signs with the utilization of the GTSRB public dataset. The study focuses on evaluating the accuracy of these models' predictions as well as their ability to employ appropriate features for image categorization. To gain insights into the strengths and limitations of the model's predictions, the study employs the local interpretable model-agnostic explanations (LIME) framework. The findings of this experiment indicate that LIME is a crucial tool for improving the interpretability and dependability of machine learning models for image identification, regardless of the models achieving an f1 score of 0.99 on classifying traffic and road signs. The conclusion of this study has important ramifications for how these models are used in practice, as it is crucial to ensure that model predictions are founded on the pertinent image features.",
+      },
+      {
+        paperTitle:
+          "Bengali News Abstractive Summarization: T5 Transformer and Hybrid Approach.",
+        authors:
+          "Hasib, K. M.; Rahman, M. A.; Masum, M. I.; De Boer, F.; Azam, S.; and Karim, A.",
+        conference:
+          "2023 International Conference on Digital Image Computing: Techniques and Applications (DICTA)",
+        extra: "pages 539–545, 2023. IEEE",
+        paperLink: "https://ieeexplore.ieee.org/abstract/document/10410939",
+        abstract:
+          "In today’s fast-paced world, everyone wants things to happen quickly. Thanks to the internet, news spreads super fast. But not all news is important. News summarization helps by giving a short version of each news story, so readers can easily figure out what type of news they want to read. There are two main types of summarization: Abstractive Text Summarization and Extractive Text Summarization. The process of abstractive text summarization is much more complex than that of extractive text summarization. This study proposes a model for generating extractive summaries, which are then utilized as input to generate abstractive summaries. The model uses the Bengali Text Summarization (BenSumm) model for extractive summarization and the Bangla Text-to-Text Transfer Transformer (BanlaT5) for abstractive summarization. The research also compares summarization acquired straight from the BanglaT5 model with summarization obtained via the proposed model. Abstractive summarization in the Bengali language has been accomplished using the Text-to-Text Transfer Transformer(T5) in this research. Although abstractive summarization of the Bengali language has been accomplished over the years using a variety of techniques, the field of using T5 in this field has only recently been discovered, and there is still a wide range of opportunities to be explored. The study has achieved promising results.",
+      },
     ],
   },
   {
     year: 2022,
     publications: [
-      <>
-        <strong>
-          LFR Waiter: Arduino Based Android Application Controlled Waiter Robot.
-        </strong>{" "}
-        <span>
-          Hasib, K. M.; Rahman, M. A.; Tahsin, M.; Karim, A.; Azam, S.; and
-          DeBoer, F.
-        </span>{" "}
-        <span>
-          In{" "}
-          <span className="italic">
-            TENCON 2022-2022 IEEE Region 10 Conference (TENCON)
-          </span>
-          , pages 1–6, 2022. IEEE.
-        </span>
-      </>,
+      {
+        paperTitle:
+          "LFR Waiter: Arduino Based Android Application Controlled Waiter Robot.",
+        authors:
+          "Hasib, K. M.; Rahman, M. A.; Tahsin, M.; Karim, A.; Azam, S.; and DeBoer, F.",
+        conference: "TENCON 2022-2022 IEEE Region 10 Conference (TENCON)",
+        extra: "pages 1–6, 2022. IEEE",
+        paperLink: "https://ieeexplore.ieee.org/document/9977936",
+        abstract:
+          "One of the most pressing challenges facing restaurants since the COVID-19 outbreak began is personnel. A staffing scarcity across the business has resulted in a slew of issues, including significantly longer wait times and irritated clients. A robot waiter may make a huge impact in a restaurant in this situation. This research led to the formation of a low-cost Arduino-based Android application control Robot that can work as a restaurant waiter. The proposed model can follow a path, avoid obstacles, serve meals to a specific consumer, and return to the kitchen on its own. To precisely follow the line, the PID algorithm is utilized. To detect potential obstructions, a sonar sensor is used. On an LCD, messages and warnings are displayed. An Android app that allows the chief to select a particular table for serving meals. For convenience, the robot's current state is displayed in the application. Our testing results show that the robot performs satisfactorily over 90% of the time. It should be emphasized that the offered model is adaptable to any restaurant.",
+      },
     ],
+  },
+];
+
+export const languageCertifications = [
+  {
+    title: "International English Language Testing System",
+    certificate:
+      "https://drive.google.com/file/d/12sUepbJNANTNCS3QheC7l3ZC09j5oEUP/view?usp=drive_link",
   },
 ];

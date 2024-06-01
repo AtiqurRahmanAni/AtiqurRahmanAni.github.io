@@ -13,11 +13,12 @@ const Education = () => {
             key={idx}
             className="flex flex-col items-center md:flex-row gap-4"
           >
-            <div className="relative w-[110px] h-full">
+            <div className="relative w-[110px] h-[115px] pointer-events-none">
               <Image
                 src={item.institutionLogo}
                 alt="Institution"
-                style={{ objectFit: "cover" }}
+                style={{ objectFit: "contain" }}
+                className="w-full h-full"
                 sizes="100%"
                 quality={100}
               />

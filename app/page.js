@@ -1,7 +1,7 @@
 export default function Home() {
   return (
     <div className="text-justify text-lg mt-6 mb-4 md:mt-0">
-      <p>Hello!👋</p>
+      <p className="font-medium text-lg">Hello!👋</p>
       <p className="mt-3">
         This is Md Atiqur Rahman. I was a former Junior Software Engineer at{" "}
         <a
