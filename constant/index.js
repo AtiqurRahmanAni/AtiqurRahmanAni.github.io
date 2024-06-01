@@ -19,7 +19,7 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 
 export const navItems = [
-  { name: "Home", href: "/" },
+  { name: "Home", href: "/home" },
   { name: "Experience", href: "/experience" },
   { name: "Education", href: "/education" },
   { name: "Publications", href: "/publications" },
