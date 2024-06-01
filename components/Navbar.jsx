@@ -4,10 +4,12 @@ import React, { useEffect, useRef, useState } from "react";
 import { navItems } from "@/constant";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faClose } from "@fortawesome/free-solid-svg-icons";
+import { usePathname } from "next/navigation";
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
   const navbarRef = useRef(null);
+  const pathName = usePathname();
 
   const handleClickOutside = (event) => {
     if (navbarRef.current && !navbarRef.current.contains(event.target)) {
@@ -40,11 +42,17 @@ const Navbar = () => {
           <li key={idx} className="relative group text">
             <Link
               href={navItem.href}
-              className="text-md text-gray-500 hover:text-gray-500"
+              className={`text-md text-gray-500 hover:text-gray-500 ${
+                pathName === navItem.href && "text-gray-800"
+              }`}
             >
               {navItem.name}
             </Link>
-            <div className="h-[4px] absolute bg-gray-400 -bottom-2 w-full rounded-md scale-x-0 group-hover:scale-x-100 transition-transform duration-200" />
+            <div
+              className={`h-[4px] absolute bg-gray-400 -bottom-2 w-full rounded-md scale-x-0 group-hover:scale-x-100 transition-transform duration-200 ${
+                pathName === navItem.href && "scale-x-100 bg-gray-800"
+              }`}
+            />
           </li>
         ))}
       </ul>

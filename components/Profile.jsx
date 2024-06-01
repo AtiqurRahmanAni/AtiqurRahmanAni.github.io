@@ -5,14 +5,14 @@ import { connectItems } from "@/constant";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 const Profile = () => {
   return (
-    <div className="flex gap-2 flex-row md:flex-col min-w-fit md:items-start items-center">
+    <div className="md:self-start md:sticky md:top-24 flex gap-2 flex-row md:flex-col min-w-fit md:items-start items-center">
       <div className="pointer-events-none relative h-[45px] w-[45px] rounded-full overflow-hidden md:h-[170px] md:w-[170px] md:border-2 md:border-gray-500">
         <Image
           src={profileImg}
           fill
           style={{ objectFit: "cover" }}
           alt="Profile img"
-          sizes="(min-width: 808px) 50vw, 100vw"
+          sizes="100%"
           priority
           quality={100}
         />

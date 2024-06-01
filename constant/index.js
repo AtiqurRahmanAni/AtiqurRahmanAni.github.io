@@ -249,3 +249,79 @@ export const projectItems = [
     embedLink: "https://www.youtube.com/embed/hKz_J2qHpe4?si=u5IWprMg_SKiRIDA",
   },
 ];
+
+export const publicationItems = [
+  {
+    year: 2023,
+    publications: [
+      <>
+        <strong>
+          Informational Query Detection on Social Media Posts in Bengali
+          Language Using Machine Learning And Transfer Learning Techniques.
+        </strong>{" "}
+        <span>Md. Atiqur Rahman, S. I. C.; and Sadid Rafan, N. J.</span>{" "}
+        <span>
+          In{" "}
+          <span className="italic">
+            2023 IEEE 13th Annual Computing and Communication Workshop and
+            Conference (CCWC)
+          </span>
+          , pages 0458–0464, 2023.
+        </span>
+      </>,
+      <>
+        <strong>
+          Evaluating the Reliability of CNN Models on Classifying Traffic and
+          Road Signs using LIME.
+        </strong>{" "}
+        <span>
+          Md. Atiqur Rahman, A. S. T.; Sanjid Islam, F. P.; and G.M. Shahariar,
+          M. T. R. S.
+        </span>{" "}
+        <span>
+          In <span className="italic">arXiv preprint arXiv:2309.05747</span>,
+          2023.
+        </span>
+      </>,
+      <>
+        <strong>
+          Bengali News Abstractive Summarization: T5 Transformer and Hybrid
+          Approach.
+        </strong>{" "}
+        <span>
+          Hasib, K. M.; Rahman, M. A.; Masum, M. I.; De Boer, F.; Azam, S.; and
+          Karim, A.
+        </span>{" "}
+        <span>
+          In{" "}
+          <span className="italic">
+            2023 International Conference on Digital Image Computing: Techniques
+            and Applications (DICTA)
+          </span>
+          , pages 539–545, 2023. IEEE
+        </span>
+      </>,
+    ],
+  },
+  {
+    year: 2022,
+    publications: [
+      <>
+        <strong>
+          LFR Waiter: Arduino Based Android Application Controlled Waiter Robot.
+        </strong>{" "}
+        <span>
+          Hasib, K. M.; Rahman, M. A.; Tahsin, M.; Karim, A.; Azam, S.; and
+          DeBoer, F.
+        </span>{" "}
+        <span>
+          In{" "}
+          <span className="italic">
+            TENCON 2022-2022 IEEE Region 10 Conference (TENCON)
+          </span>
+          , pages 1–6, 2022. IEEE.
+        </span>
+      </>,
+    ],
+  },
+];

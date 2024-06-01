@@ -13,13 +13,11 @@ const CV = () => {
         />{" "}
         here
       </p>
-      <div className="mt-4">
-        <iframe
-          src="/CV.pdf"
-          className="w-full min-h-[50dvh] md:min-h-[65dvh] border-none"
-          title="PDF Viewer"
-        ></iframe>
-      </div>
+      <iframe
+        src="https://drive.google.com/file/d/1Vx5F6Iai9h_KZ7X0vdGvPvfaUtR6Wgrx/preview"
+        className="w-full h-auto aspect-[4/3] border-none"
+        title="PDF Viewer"
+      ></iframe>
     </Section>
   );
 };
