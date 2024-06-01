@@ -45,7 +45,7 @@ const Profile = () => {
             leaveTo="opacity-0 translate-y-1"
           >
             <PopoverPanel
-              anchor="bottom"
+              anchor="bottom end"
               className="bg-white shadow-[0px_1px_5px_4px_rgba(0,0,0,0.40)]"
             >
               <ul className="p-3">
