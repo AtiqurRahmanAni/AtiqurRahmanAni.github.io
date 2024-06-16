@@ -11,7 +11,7 @@ const Honours = () => {
   return (
     <div>
       <Section heading="Honours & Awards">
-        <ul className="mt-4 space-y-1.5 text-lg list-disc list-inside">
+        <ul className="mt-4 space-y-1.5 text-lg list-disc list-outside pl-5">
           {honours.map((item, idx) => (
             <li key={idx}>
               {item.title}{" "}
@@ -23,12 +23,12 @@ const Honours = () => {
         </ul>
       </Section>
       <Section heading="Extracurricular Activities">
-        <ul className="mt-4 space-y-1.5 text-lg list-disc list-inside">
+        <ul className="mt-4 space-y-1.5 text-lg list-disc list-outside pl-5">
           <li>Organizer of AUST CSE Festival Fall 2021</li>
         </ul>
       </Section>
       <Section heading="Course Completed">
-        <ul className="mt-4 space-y-1.5 text-lg list-disc list-inside">
+        <ul className="mt-4 space-y-1.5 text-lg list-disc list-outside pl-5">
           {courseCompletedItems.map((item, idx) => (
             <li key={idx}>
               {item.title}{" "}
@@ -40,7 +40,7 @@ const Honours = () => {
         </ul>
       </Section>
       <Section heading="Language Certification">
-        <ul className="mt-4 space-y-1.5 text-lg list-disc list-inside">
+        <ul className="mt-4 space-y-1.5 text-lg list-disc list-outside pl-5">
           {languageCertifications.map((item, idx) => (
             <li key={idx}>
               {item.title}{" "}

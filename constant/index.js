@@ -258,6 +258,22 @@ export const projectItems = [
 
 export const publicationItems = [
   {
+    year: 2024,
+    publications: [
+      {
+        paperTitle:
+          "GliomaCNN: An Effective Lightweight CNN Model in Assessment of Classifying Brain Tumor from Magnetic Resonance Images Using Explainable AI",
+        authors:
+          "Md. Atiqur Rahman, Mustavi Ibne Masum, Khan Md Hasib, M. F. Mridha, Sultan Alfarhood, Mejdl Safran, Dunren Che",
+        conference: "Computer Modeling in Engineering & Sciences (CMES)",
+        extra: "pages 1–6, 2022. IEEE",
+        paperLink: "https://www.techscience.com/CMES/online/detail/20790",
+        abstract:
+          "Brain tumors pose a significant threat to human lives and have gained increasing attention as the tenth leading cause of global mortality. This study addresses the pressing issue of brain tumor classification using Magnetic resonance imaging (MRI). It focuses on distinguishing between Low-Grade Gliomas (LGG) and High-Grade Gliomas (HGG). LGGs are benign and typically manageable with surgical resection, while HGGs are malignant and more aggressive. The research introduces an innovative custom convolutional neural network (CNN) model, Glioma-CNN. GliomaCNN stands out as a lightweight CNN model compared to its predecessors. The research utilized the BraTS 2020 dataset for its experiments. Integrated with the gradient-boosting algorithm, GliomaCNN has achieved an impressive accuracy of 99.1569%. The model’s interpretability is ensured through SHapley Additive exPlanations (SHAP) and Gradient-weighted Class Activation Mapping (Grad-CAM++). They provide insights into critical decision-making regions for classification outcomes. Despite challenges in identifying tumors in images without visible signs, the model demonstrates remarkable performance in this critical medical application, offering a promising tool for accurate brain tumor diagnosis which paves the way for enhanced early detection and treatment of brain tumors.",
+      },
+    ],
+  },
+  {
     year: 2023,
     publications: [
       {
