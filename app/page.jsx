@@ -61,13 +61,13 @@ const Home = () => {
                   Classifying Brain Tumor from Magnetic Resonance Images Using
                   Explainable AI
                 </a>{" "}
-                got accepted in{" "}
+                published in{" "}
                 <a
-                  href="https://www.techscience.com/journal/CMES"
+                  href="https://www.techscience.com/"
                   className="text-[#52adc8]"
                   target="_blank"
                 >
-                  CMES
+                  Tech Science Press
                 </a>
               </div>
             </li>
