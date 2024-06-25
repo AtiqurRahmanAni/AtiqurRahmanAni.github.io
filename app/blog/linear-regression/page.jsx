@@ -5,6 +5,14 @@ import fitLinearRegression from "@/utils/linearRegression";
 import Select from "@/components/Select";
 import Button from "@/components/Button";
 import LinearRegressionChart from "@/components/LinearRegressionChart";
+import rehypeKatex from "rehype-katex";
+import remarkMath from "remark-math";
+import "katex/dist/katex.min.css";
+import Markdown from "react-markdown";
+import remarkGfm from "remark-gfm";
+import { linearRegressionPost } from "@/constant";
+import Image from "next/image";
+import lines from "@/public/lines.png";
 
 const trainingData = [
   [1.0, 6.329212172649187],
@@ -185,11 +193,40 @@ const Blog = () => {
   }, [learningRate, epoch, fittingLine]);
 
   return (
-    <div className="mt-6 w-full">
-      <div className="mt-3">
-        <p className="font-bold text-2xl text-gray-500 text-center">
+    <div className="w-full mt-2">
+      <div>
+        <p className="font-bold text-3xl text-gray-500 text-center">
           Linear Regression
         </p>
+      </div>
+      <div className="mt-2 text-lg">
+        <Markdown
+          remarkPlugins={[remarkMath, remarkGfm]}
+          rehypePlugins={[rehypeKatex]}
+        >
+          {`
+In linear regression, we aim to find a linear relationship between a dependent variable (y) and an independent variable (x). Linear regression assumes that the relationship is linear, meaning that a line can represent the data. The equation of a line is given by:
+$$
+y = m*x + b
+$$
+where $y$ represents the dependent variable, $x$ represents the independent variable, $m$ represents the slope (or angle with the horizontal axis), and $b$ represents the intercept (or the point where the line intersects the vertical axis). If the value of $b=0$, the line will pass through the origin. See the following figure to understand better.
+`}
+        </Markdown>
+        <div>
+          <Image
+            src={lines}
+            className="w-full h-full"
+            alt="lines"
+            priority
+            quality={100}
+          />
+        </div>
+        <Markdown
+          remarkPlugins={[remarkMath, remarkGfm]}
+          rehypePlugins={[rehypeKatex]}
+        >
+          {`So, by varying the values of $m$ and $b$, we can get our desired line that will fit the data point better. The question is, how can we find the optimal value of $m$ and $b$ that will fit our data point? One possible way is to try all possible values of $m$ and $b$. However, this approach is not feasible. It may take a lot of time to find the optimal values. Instead, we can formulate the problem from another angle. We initially randomly take two values of $m$ and $b$. Then calculate the difference between the data point and the value given by the mentioned function. Our aim is to minimize the loss.`}
+        </Markdown>
       </div>
       <div className="mt-1">
         <p className="text-gray-400 text-lg font-semibold text-center">

@@ -27,10 +27,9 @@ export const Select = ({ options, className, selected, setSelected }) => {
         </ListboxButton>
         <ListboxOptions
           anchor="bottom"
-          transition
           className={clsx(
             "w-[var(--button-width)] rounded-xl border border-gray-500/50 bg-gray-500/80 p-1 [--anchor-gap:var(--spacing-1)] focus:outline-none",
-            "transition duration-100 ease-in data-[leave]:data-[closed]:opacity-0"
+            "data-[leave]:data-[closed]:opacity-0"
           )}
         >
           {options.map((option) => (

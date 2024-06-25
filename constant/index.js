@@ -338,3 +338,11 @@ export const languageCertifications = [
       "https://drive.google.com/file/d/12sUepbJNANTNCS3QheC7l3ZC09j5oEUP/view?usp=drive_link",
   },
 ];
+
+export const linearRegressionPost = `
+In a linear regression, a line is fitted on some data samples. Linear regression will only work if the data samples are more or less than the linearly distributed. So, how can we fit a line. Since we are trying to fit a line, it is pretty east to represent a line using mathematically. The equation is the line is:
+$$
+y = m*x + b
+$$
+In the following equation, $m$ is the slop, meaning  the angle with the horizontal axis. $b$ is the intersection point of the vertical axis. If the value of $b=0$, the line will pass through the origin. See the following figure to understand better.
+`;
