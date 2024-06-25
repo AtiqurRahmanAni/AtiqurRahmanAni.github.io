@@ -26,6 +26,7 @@ export const navItems = [
   { name: "Honours & Awards", href: "/honours-and-awards" },
   { name: "Projects", href: "/projects" },
   { name: "CV", href: "/cv" },
+  { name: "Blog", href: "/blog" },
 ];
 
 export const connectItems = [
