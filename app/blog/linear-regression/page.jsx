@@ -10,9 +10,10 @@ import remarkMath from "remark-math";
 import "katex/dist/katex.min.css";
 import Markdown from "react-markdown";
 import remarkGfm from "remark-gfm";
-import { linearRegressionPost } from "@/constant";
 import Image from "next/image";
 import lines from "@/public/lines.png";
+import linerloss from "@/public/linearloss.png";
+import convex from "@/public/convex.png";
 
 const trainingData = [
   [1.0, 6.329212172649187],
@@ -117,35 +118,58 @@ const trainingData = [
   [10.0, 24.23074408964995],
 ];
 
-const learningRates = [
-  { id: 1, value: 0.001 },
-  { id: 2, value: 0.002 },
-  { id: 3, value: 0.003 },
-  { id: 4, value: 0.004 },
-  { id: 5, value: 0.005 },
-  { id: 6, value: 0.006 },
-  { id: 7, value: 0.007 },
-];
+const learningRates = [0.001, 0.002, 0.003, 0.004, 0.005, 0.006, 0.007];
 
 const epochs = [
-  { id: 1, value: 50 },
-  { id: 2, value: 100 },
-  { id: 3, value: 200 },
-  { id: 4, value: 400 },
-  { id: 5, value: 600 },
-  { id: 6, value: 800 },
-  { id: 7, value: 1000 },
-  { id: 8, value: 2000 },
-  { id: 9, value: 3000 },
-  { id: 10, value: 4000 },
-  { id: 11, value: 5000 },
-  { id: 12, value: 6000 },
-  { id: 13, value: 7000 },
-  { id: 14, value: 8000 },
+  50, 100, 200, 400, 600, 800, 1000, 2000, 3000, 4000, 5000, 6000, 7000, 8000,
 ];
 
 const w = 1;
 const b = 14;
+
+const postPart1 = `
+In linear regression, we aim to find a linear relationship between a dependent variable (y) and an independent variable (x). Linear regression assumes that the relationship is linear, meaning that a line can represent the data. The equation of a line is given by:
+$$
+y = m*x + b
+$$
+where $y$ represents the dependent variable, $x$ represents the independent variable, $m$ represents the slope (or angle with the horizontal axis), and $b$ represents the intercept (or the point where the line intersects the vertical axis). If the value of $b=0$, the line will pass through the origin. See the following figure to understand better.
+`;
+
+const postPart2 = `So, by varying the values of $m$ and $b$, we can get our desired line that will fit the data point better. The question is, how can we find the optimal value of $m$ and $b$ that will fit our data point? One possible way is to try all possible values of $m$ and $b$. However, this approach is not feasible. It may take a lot of time to find the optimal values. Instead, we can formulate the problem from another angle. We initially randomly take two values of $m$ and $b$. Then calculate the difference between the data points and the value given by the function $y = m*x+c$. Our aim is to minimize the loss. How can we minimize the loss? Before minimizing the loss, we first need to define the loss function. One simple loss function can be used to find the absolute difference between the data points and the value given by the function and sum them up. Mathematically, the loss function can be expressed by the following equation:
+$$
+error = \\frac{1}{n}\\sum_{i=1}^n|y_i - (m*x_i+c)|
+$$
+Where $y_i$ is the actual value from the data. But here is a problem. The function is a linear function. One way to visualize the function is by putting a range of values in $|y_i - (m*x_i+c)|$ this part. Replace $y_i - (m*x_i+c)$ by $v$. Now put some values, say from $-10$ to $10$. The output of the function will range from $0$ to $10$. The function plot will look like this: 
+`;
+
+const postPart3 = `The problem with this linear function is that it is not differentiable. If we differentiate $y=|x|$ with respect to $x$:
+$$
+\\implies{\\frac{d_y}{d_x}=\\frac{d}{d_x}x}
+$$
+$$
+\\implies{\\frac{d_y}{d_x}=1}
+$$
+We will always get $1$, which is a constant. There is a [*wonderful tutorial*](https://youtu.be/9vKqVkMQHKk?si=nD1Ki0281QC0Dyyz) on derivatives worth checking. We need the error/loss function, which is non-leaner, meaning something like convex. An example of a convex function is $y=x^2$. The plot of this function will look like this:
+`;
+
+const postPart4 = `Now, if we differentiate the function with respect to $x$:
+$$
+\\implies{\\frac{d_y}{d_x}=\\frac{d}{d_x}x^2}
+$$
+$$
+\\implies{\\frac{d_y}{d_x}=2x}
+$$
+We get $2x$, which definitely is not a constant like before. Since our target is to minimize the loss, we can use this convex function. In simple terms, derivative means slope, which can be written as:
+$$
+m=\\frac{\\Delta{y}}{\\Delta{x}}
+$$
+If we see figure 3 above, the slope is $0$ where $x=0$ according to the curve, which is also the lowest point. Since the derivative of $y=x^2$ is not constant, we can use the derivative of this function to find the minimum value. So, instead of using just absolute error, we can redefine our loss function something like this:
+$$
+mse = \\frac{1}{n}\\sum_{i=1}^n(y_i - (m*x_i+c))^2
+$$
+This function is called mean squared error (MSE). So far, we have found out how we can calculate the loss/error and how we can find the minimum point of this function using the derivative. Remember, to fit the line to our data points, we can change the values of $m$ and $b$. Using the loss function, we need to somehow find out the optimal values of those two variables so that we do not need to iterate over all possible values of $m$ and $b$. 
+`;
+
 const setInitialLine = () => {
   return trainingData.map((sample) => {
     return {
@@ -173,8 +197,8 @@ const Blog = () => {
         trainingData,
         w,
         b,
-        learningRate.value,
-        epoch.value
+        learningRate,
+        epoch
       );
       setData(
         trainingData.map((sample) => {
@@ -204,13 +228,7 @@ const Blog = () => {
           remarkPlugins={[remarkMath, remarkGfm]}
           rehypePlugins={[rehypeKatex]}
         >
-          {`
-In linear regression, we aim to find a linear relationship between a dependent variable (y) and an independent variable (x). Linear regression assumes that the relationship is linear, meaning that a line can represent the data. The equation of a line is given by:
-$$
-y = m*x + b
-$$
-where $y$ represents the dependent variable, $x$ represents the independent variable, $m$ represents the slope (or angle with the horizontal axis), and $b$ represents the intercept (or the point where the line intersects the vertical axis). If the value of $b=0$, the line will pass through the origin. See the following figure to understand better.
-`}
+          {postPart1}
         </Markdown>
         <div>
           <Image
@@ -225,7 +243,37 @@ where $y$ represents the dependent variable, $x$ represents the independent vari
           remarkPlugins={[remarkMath, remarkGfm]}
           rehypePlugins={[rehypeKatex]}
         >
-          {`So, by varying the values of $m$ and $b$, we can get our desired line that will fit the data point better. The question is, how can we find the optimal value of $m$ and $b$ that will fit our data point? One possible way is to try all possible values of $m$ and $b$. However, this approach is not feasible. It may take a lot of time to find the optimal values. Instead, we can formulate the problem from another angle. We initially randomly take two values of $m$ and $b$. Then calculate the difference between the data point and the value given by the mentioned function. Our aim is to minimize the loss.`}
+          {postPart2}
+        </Markdown>
+        <div>
+          <Image
+            src={linerloss}
+            className="w-full h-full"
+            alt="linear loss function"
+            priority
+            quality={100}
+          />
+        </div>
+        <Markdown
+          remarkPlugins={[remarkMath, remarkGfm]}
+          rehypePlugins={[rehypeKatex]}
+        >
+          {postPart3}
+        </Markdown>
+        <div>
+          <Image
+            src={convex}
+            className="w-full h-full"
+            alt="convex function"
+            priority
+            quality={100}
+          />
+        </div>
+        <Markdown
+          remarkPlugins={[remarkMath, remarkGfm]}
+          rehypePlugins={[rehypeKatex]}
+        >
+          {postPart4}
         </Markdown>
       </div>
       <div className="mt-1">

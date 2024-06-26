@@ -43,14 +43,17 @@ const Navbar = () => {
             <Link
               href={navItem.href}
               className={`text-md text-gray-500 hover:text-gray-500 ${
-                pathName === navItem.href && "text-gray-800"
+                pathName.split("/").filter(Boolean)[0] ===
+                  navItem.href.split("/").filter(Boolean)[0] && "text-gray-800"
               }`}
             >
               {navItem.name}
             </Link>
             <div
               className={`h-[4px] absolute bg-gray-400 -bottom-2 w-full rounded-md scale-x-0 group-hover:scale-x-100 transition-transform duration-200 ${
-                pathName === navItem.href && "scale-x-100 bg-gray-800"
+                pathName.split("/").filter(Boolean)[0] ===
+                  navItem.href.split("/").filter(Boolean)[0] &&
+                "scale-x-100 bg-gray-800"
               }`}
             />
           </li>
