@@ -167,7 +167,23 @@ If we see figure 3 above, the slope is $0$ where $x=0$ according to the curve, w
 $$
 mse = \\frac{1}{n}\\sum_{i=1}^n(y_i - (m*x_i+c))^2
 $$
-This function is called mean squared error (MSE). So far, we have found out how we can calculate the loss/error and how we can find the minimum point of this function using the derivative. Remember, to fit the line to our data points, we can change the values of $m$ and $b$. Using the loss function, we need to somehow find out the optimal values of those two variables so that we do not need to iterate over all possible values of $m$ and $b$. 
+This function is called mean squared error (MSE). So far, we have found out how we can calculate the loss/error and how we can find the minimum point of this function using the derivative. Remember, to fit the line to our data points, we can change the values of $m$ and $b$. Using the loss function, we need to somehow find out the optimal values of those two variables so that we do not need to iterate over all possible values of $m$ and $c$. 
+`;
+
+const postPart5 = `What we need to do is, find the derivative of the above error function with respect to $m$ and $c$. The derivative of this function with respect to $m$ is:
+$$
+\\frac{d_{mse}}{d_m}=-\\frac{2}{n}\\sum_{i=1}^n(y_i - (m*x_i+c)) * x_i
+$$
+And the derivative with respect to $c$ is:
+$$
+\\frac{d_{mse}}{d_c}=-\\frac{2}{n}\\sum_{i=1}^n(y_i - (m*x_i+c))
+$$
+So, after one iteration of the dataset, we calculate the gradient of $m$ and $c$. The update rule of $m$ and $c$ is:
+$$
+m = m - \\frac{d_{mse}}{d_m} * lr \\newline
+c = c - \\frac{d_{mse}}{d_c} * lr 
+$$
+Here, we do not take the actual value of the derivative, instead we take some amount of those value. That's why we multiply the derivative values with a constant called learning rate.
 `;
 
 const setInitialLine = () => {
@@ -274,6 +290,14 @@ const Blog = () => {
           rehypePlugins={[rehypeKatex]}
         >
           {postPart4}
+        </Markdown>
+      </div>
+      <div>
+        <Markdown
+          remarkPlugins={[remarkMath, remarkGfm]}
+          rehypePlugins={[rehypeKatex]}
+        >
+          {postPart5}
         </Markdown>
       </div>
       <div className="mt-1">
