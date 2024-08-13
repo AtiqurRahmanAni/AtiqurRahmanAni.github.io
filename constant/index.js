@@ -208,6 +208,14 @@ export const courseCompletedItems = [
 
 export const projectItems = [
   {
+    title: "Connectly",
+    description:
+      "A messenger like webapp where users can chat with each other in real time",
+    gitLink: "https://github.com/AtiqurRahmanAni/real-time-message.git",
+    demoLink: "https://www.youtube.com/watch?v=doNflwl3nys",
+    embedLink: "https://www.youtube.com/embed/doNflwl3nys?si=ce07S6EbWgEl9qtd",
+  },
+  {
     title: "Robo-Waiter",
     description:
       "A robot waiter which is capable of delivering food to the customer autonomously",
