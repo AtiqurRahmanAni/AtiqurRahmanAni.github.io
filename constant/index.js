@@ -208,6 +208,13 @@ export const courseCompletedItems = [
 
 export const projectItems = [
   {
+    title: "Digits Recognition",
+    description: "A simple webapp to recognize handwritten digits from 0 to 9",
+    gitLink: "https://github.com/AtiqurRahmanAni/handwritten_digits_cnn.git",
+    demoLink: "https://www.youtube.com/watch?v=FFNXYUJcOMA",
+    embedLink: "https://www.youtube.com/embed/FFNXYUJcOMA?si=0TCC-cF61xv0hxZU",
+  },
+  {
     title: "Connectly",
     description:
       "A messenger like webapp where users can chat with each other in real time",
