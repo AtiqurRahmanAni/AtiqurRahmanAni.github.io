@@ -208,6 +208,13 @@ export const courseCompletedItems = [
 
 export const projectItems = [
   {
+    title: "Speech to Text",
+    description: "An audio-to-text generator with timestamp",
+    gitLink: "https://github.com/AtiqurRahmanAni/audio-transcribe.git",
+    demoLink: "https://youtu.be/JMygNyHvT4E?si=wQrG7CCYu0EdhgEh",
+    embedLink: "https://www.youtube.com/embed/JMygNyHvT4E?si=wQrG7CCYu0EdhgEh",
+  },
+  {
     title: "Digits Recognition",
     description: "A simple webapp to recognize handwritten digits from 0 to 9",
     gitLink: "https://github.com/AtiqurRahmanAni/handwritten_digits_cnn.git",
