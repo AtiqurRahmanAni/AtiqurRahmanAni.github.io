@@ -5,7 +5,7 @@ import React from "react";
 
 const Projects = () => {
   return (
-    <Section heading="Undergraduate Projects">
+    <Section heading="Projects">
       <div className="flex flex-wrap justify-center md:justify-start gap-6 mt-6">
         {projectItems.map((item, idx) => (
           <div
