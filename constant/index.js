@@ -52,7 +52,7 @@ export const connectItems = [
     icon: faOrcid,
   },
   {
-    name: "LinkdIn",
+    name: "LinkedIn",
     link: "https://www.linkedin.com/in/atiqur-rahman-06b0a41bb/",
     icon: faLinkedin,
   },
