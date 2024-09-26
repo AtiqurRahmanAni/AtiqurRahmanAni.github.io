@@ -208,8 +208,17 @@ export const courseCompletedItems = [
 
 export const projectItems = [
   {
+    title: "ClipFinder",
+    description:
+      "An AI-based application designed to separate video clips based on reference faces",
+    gitLink: "https://github.com/AtiqurRahmanAni/clip-finder.git",
+    demoLink: "https://www.youtube.com/watch?v=cDSp6RYn1lY",
+    embedLink: "https://www.youtube.com/embed/cDSp6RYn1lY?si=oWqvY9XB77C7ZDTK",
+  },
+  {
     title: "Speech to Text",
-    description: "An audio-to-text generator with timestamp",
+    description:
+      "An audio-to-text generator with timestamp utilizing SOTA Whisper model from OpenAI",
     gitLink: "https://github.com/AtiqurRahmanAni/audio-transcribe.git",
     demoLink: "https://youtu.be/JMygNyHvT4E?si=wQrG7CCYu0EdhgEh",
     embedLink: "https://www.youtube.com/embed/JMygNyHvT4E?si=wQrG7CCYu0EdhgEh",
