@@ -281,7 +281,7 @@ export const projectItems = [
     title: "Arrival",
     description:
       "Arrival is a survival game taking place in the space. It is an infinite scrolling game continuously defending two objects, the player’s spacecraft and the earth",
-    gitLink: null,
+    gitLink: "https://github.com/TeamAugmentors/Arrival.git",
     demoLink: "https://www.youtube.com/watch?v=hKz_J2qHpe4",
     embedLink: "https://www.youtube.com/embed/hKz_J2qHpe4?si=u5IWprMg_SKiRIDA",
   },
