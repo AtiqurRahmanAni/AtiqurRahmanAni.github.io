@@ -2,6 +2,8 @@ import austLogo from "@/public/austlogo.png";
 import pioneerLogo from "@/public/pioneerlogo.png";
 import btriLogo from "@/public/btrilogo.png";
 import collegeLogo from "@/public/clglogo.png";
+import seuLogo from "@/public/seulogo.png";
+
 import {
   faGithub,
   faGoogleScholar,
@@ -17,6 +19,7 @@ import {
   faGraduationCap,
   faLocationArrow,
 } from "@fortawesome/free-solid-svg-icons";
+import LinearRegressionBlogCoverPic from "@/public/linearregressionblogcoverpic.png";
 
 export const navItems = [
   { name: "Home", href: "/" },
@@ -26,6 +29,7 @@ export const navItems = [
   { name: "Honours & Awards", href: "/honours-and-awards" },
   { name: "Projects", href: "/projects" },
   { name: "CV", href: "/cv" },
+  { name: "Blog", href: "/blog" },
 ];
 
 export const connectItems = [
@@ -82,10 +86,10 @@ export const experienceItems = [
   {
     position: "Part-Time Lecturer",
     department: "Department of Computer Science and Engineering",
-    organization: "Ahsanullah University of Science and Technology",
-    organizationSite: "https://aust.edu/",
-    duration: "Duration: April 2024 - Present",
-    organizationLogo: austLogo,
+    organization: "Southeast University",
+    organizationSite: "https://new.seu.edu.bd",
+    duration: "Duration: August 2024 - Present",
+    organizationLogo: seuLogo,
   },
   {
     position: "Former Junior Software Engineer",
@@ -366,5 +370,15 @@ export const languageCertifications = [
     title: "International English Language Testing System",
     certificate:
       "https://drive.google.com/file/d/12sUepbJNANTNCS3QheC7l3ZC09j5oEUP/view?usp=drive_link",
+  },
+];
+
+export const blogItems = [
+  {
+    coverPic: LinearRegressionBlogCoverPic,
+    title: "Linear regression",
+    description:
+      "In linear regression, we aim to find a linear relationship between a dependent...",
+    link: "/blog/linear-regression",
   },
 ];
