@@ -15,20 +15,28 @@ const Home = () => {
           >
             Pioneer Alpha Ltd.
           </a>{" "}
-          Currently, I am working as a Part Time Lecturer at the Department of
+          Currently, I am working as a Part-Time Lecturer at the Department of
           CSE,{" "}
           <a
-            href="https://aust.edu/"
+            href="https://new.seu.edu.bd"
+            className="text-[#52adc8] font-semibold"
+            target="_blank"
+          >
+            Southeast University
+          </a>
+          . I graduated from{" "}
+          <a
+            href="https://www.aust.edu"
             className="text-[#52adc8] font-semibold"
             target="_blank"
           >
             Ahsanullah University of Science and Technology
-          </a>
-          . I graduated from the same university with a Bachelor&apos;s degree
-          in Computer Science and Engineering. I am a passionate programmer with
-          expertise in C, C++, and Python. I have hands-on experience in
-          robotics and have completed various projects. I am very much
-          interested in the field of Robotics and Computer Vision works.
+          </a>{" "}
+          with a Bachelor&apos;s degree in Computer Science and Engineering. I
+          am a passionate programmer with expertise in C, C++, and Python. I
+          have hands-on experience in robotics and have completed various
+          projects. I am very much interested in the field of Robotics and
+          Computer Vision works.
         </p>
         <p className="mt-5">
           From the beginning of my university life, I have had a strong passion
