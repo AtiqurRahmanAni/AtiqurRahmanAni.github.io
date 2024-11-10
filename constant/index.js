@@ -29,7 +29,6 @@ export const navItems = [
   { name: "Honours & Awards", href: "/honours-and-awards" },
   { name: "Projects", href: "/projects" },
   { name: "CV", href: "/cv" },
-  { name: "Blog", href: "/blog" },
 ];
 
 export const connectItems = [
@@ -370,15 +369,5 @@ export const languageCertifications = [
     title: "International English Language Testing System",
     certificate:
       "https://drive.google.com/file/d/12sUepbJNANTNCS3QheC7l3ZC09j5oEUP/view?usp=drive_link",
-  },
-];
-
-export const blogItems = [
-  {
-    coverPic: LinearRegressionBlogCoverPic,
-    title: "Linear regression",
-    description:
-      "In linear regression, we aim to find a linear relationship between a dependent...",
-    link: "/blog/linear-regression",
   },
 ];
