@@ -2,6 +2,8 @@ import austLogo from "@/public/austlogo.png";
 import pioneerLogo from "@/public/pioneerlogo.png";
 import btriLogo from "@/public/btrilogo.png";
 import collegeLogo from "@/public/clglogo.png";
+import seuLogo from "@/public/seulogo.png";
+
 import {
   faGithub,
   faGoogleScholar,
@@ -84,10 +86,10 @@ export const experienceItems = [
   {
     position: "Part-Time Lecturer",
     department: "Department of Computer Science and Engineering",
-    organization: "Ahsanullah University of Science and Technology",
-    organizationSite: "https://aust.edu/",
-    duration: "Duration: April 2024 - Present",
-    organizationLogo: austLogo,
+    organization: "Southeast University",
+    organizationSite: "https://new.seu.edu.bd",
+    duration: "Duration: August 2024 - Present",
+    organizationLogo: seuLogo,
   },
   {
     position: "Former Junior Software Engineer",

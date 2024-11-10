@@ -39,7 +39,8 @@ const Honours = () => {
           ))}
         </ul>
       </Section>
-      <Section heading="Language Certification">
+      {/* omit for now */}
+      {/* <Section heading="Language Certification">
         <ul className="mt-4 space-y-1.5 text-lg list-disc list-outside pl-5">
           {languageCertifications.map((item, idx) => (
             <li key={idx}>
@@ -50,7 +51,7 @@ const Honours = () => {
             </li>
           ))}
         </ul>
-      </Section>
+      </Section> */}
     </div>
   );
 };
