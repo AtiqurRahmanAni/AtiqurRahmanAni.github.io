@@ -19,7 +19,6 @@ import {
   faGraduationCap,
   faLocationArrow,
 } from "@fortawesome/free-solid-svg-icons";
-import LinearRegressionBlogCoverPic from "@/public/linearregressionblogcoverpic.png";
 
 export const navItems = [
   { name: "Home", href: "/" },
@@ -82,6 +81,14 @@ export const connectItems = [
 ];
 
 export const experienceItems = [
+  {
+    position: "Part-Time Lecturer",
+    department: "Department of Computer Science and Engineering",
+    organization: "Ahsanullah University of Science and Technology",
+    organizationSite: "https://aust.edu",
+    duration: "Duration: April 2024 - Present",
+    organizationLogo: austLogo,
+  },
   {
     position: "Part-Time Lecturer",
     department: "Department of Computer Science and Engineering",
