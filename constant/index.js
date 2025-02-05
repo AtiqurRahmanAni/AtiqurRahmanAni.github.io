@@ -3,6 +3,7 @@ import pioneerLogo from "@/public/pioneerlogo.png";
 import btriLogo from "@/public/btrilogo.png";
 import collegeLogo from "@/public/clglogo.png";
 import seuLogo from "@/public/seulogo.png";
+import fklogo from "@/public/fklogo.jpg";
 
 import {
   faGithub,
@@ -81,6 +82,14 @@ export const connectItems = [
 ];
 
 export const experienceItems = [
+  {
+    position: "Junior Python Developer",
+    department: "",
+    organization: "filerskeepers",
+    organizationSite: "https://filerskeepers.co",
+    duration: "Duration: February 2025 - Present",
+    organizationLogo: fklogo,
+  },
   {
     position: "Part-Time Lecturer",
     department: "Department of Computer Science and Engineering",
