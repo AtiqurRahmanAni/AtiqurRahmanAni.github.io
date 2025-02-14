@@ -103,7 +103,7 @@ export const experienceItems = [
     department: "Department of Computer Science and Engineering",
     organization: "Southeast University",
     organizationSite: "https://new.seu.edu.bd",
-    duration: "Duration: August 2024 - Present",
+    duration: "Duration: August 2024 - February 2025",
     organizationLogo: seuLogo,
   },
   {
