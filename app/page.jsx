@@ -7,15 +7,15 @@ const Home = () => {
       <div className="text-justify text-lg mt-6 md:mt-0">
         <p className="font-medium text-lg">Hello!👋</p>
         <p className="mt-3">
-          This is Md Atiqur Rahman. I was a former Junior Software Engineer at{" "}
+          This is Md Atiqur Rahman. I was a Junior Python Developer at{" "}
           <a
-            href="https://pioneeralpha.com/"
+            href="https://www.filerskeepers.co/"
             className="text-[#52adc8] font-semibold"
             target="_blank"
           >
-            Pioneer Alpha Ltd.
+            filerskeepers.
           </a>{" "}
-          Currently, I am working as a Part-Time Lecturer at the Department of
+          {/* Currently, I am working as a Part-Time Lecturer at the Department of
           CSE,{" "}
           <a
             href="https://new.seu.edu.bd"
@@ -23,8 +23,8 @@ const Home = () => {
             target="_blank"
           >
             Southeast University
-          </a>
-          . I graduated from{" "}
+          </a> */}
+          I graduated from{" "}
           <a
             href="https://www.aust.edu"
             className="text-[#52adc8] font-semibold"

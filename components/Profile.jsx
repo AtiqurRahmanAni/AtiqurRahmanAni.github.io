@@ -28,7 +28,7 @@ const Profile = () => {
           Md Atiqur Rahman
         </h4>
         <p className="text-[14px] text-gray-500 tracking-tighter lg:mt-1">
-          Adjunct Lecturer @ CSE, AUST
+          Junior Python Developer, filerskeepers
         </p>
       </div>
       <div className="self-center ml-4">
