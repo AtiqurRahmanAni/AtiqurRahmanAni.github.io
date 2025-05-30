@@ -95,7 +95,7 @@ export const experienceItems = [
     department: "Department of Computer Science and Engineering",
     organization: "Ahsanullah University of Science and Technology",
     organizationSite: "https://aust.edu",
-    duration: "Duration: April 2024 - Present",
+    duration: "Duration: April 2024 - March 2025",
     organizationLogo: austLogo,
   },
   {
