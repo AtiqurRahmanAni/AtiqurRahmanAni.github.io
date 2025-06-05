@@ -20,7 +20,7 @@ const Profile = () => {
           alt="Profile img"
           sizes="100%"
           priority
-          quality={100}
+          quality={75}
         />
       </div>
       <div>
