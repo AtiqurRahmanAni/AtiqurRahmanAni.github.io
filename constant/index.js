@@ -83,7 +83,7 @@ export const connectItems = [
 
 export const experienceItems = [
   {
-    position: "Junior Python Developer",
+    position: "Python Developer",
     department: "",
     organization: "filerskeepers",
     organizationSite: "https://filerskeepers.co",
@@ -387,3 +387,4 @@ export const languageCertifications = [
       "https://drive.google.com/file/d/12sUepbJNANTNCS3QheC7l3ZC09j5oEUP/view?usp=drive_link",
   },
 ];
+
