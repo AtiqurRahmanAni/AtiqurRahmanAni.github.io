@@ -53,7 +53,7 @@ const Home = () => {
           <h2 className="font-semibold text-2xl text-gray-600">
             Recent News ⚡
           </h2>
-          <div className="mt-[2px] h-[1.5px] w-full bg-gray-300/40" />
+          <div className="mt-0.5 h-[1.5px] w-full bg-gray-300/40" />
         </div>
         <div>
           <ul className="list-disc list-outside pl-5">

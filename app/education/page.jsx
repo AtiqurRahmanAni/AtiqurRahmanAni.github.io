@@ -13,7 +13,7 @@ const Education = () => {
             key={idx}
             className="flex flex-col items-center md:flex-row gap-4"
           >
-            <div className="relative w-[110px] h-[115px] pointer-events-none">
+            <div className="relative w-27.5 h-28.75 pointer-events-none">
               <Image
                 src={item.institutionLogo}
                 alt="Institution"

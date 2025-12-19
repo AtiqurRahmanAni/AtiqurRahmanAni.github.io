@@ -50,7 +50,7 @@ const Navbar = () => {
               {navItem.name}
             </Link>
             <div
-              className={`h-[4px] absolute bg-gray-400 -bottom-2 w-full rounded-md scale-x-0 group-hover:scale-x-100 transition-transform duration-200 ${
+              className={`h-1 absolute bg-gray-400 -bottom-2 w-full rounded-md scale-x-0 group-hover:scale-x-100 transition-transform duration-200 ${
                 pathName.split("/").filter(Boolean)[0] ===
                   navItem.href.split("/").filter(Boolean)[0] &&
                 "scale-x-100 bg-gray-800"
@@ -60,7 +60,7 @@ const Navbar = () => {
         ))}
       </ul>
       <div
-        className="absolute right-2 top-5 w-[30px] h-[30px] cursor-pointer block lg:hidden"
+        className="absolute right-2 top-5 w-7.5 h-7.5 cursor-pointer block lg:hidden"
         onClick={() => setOpen((prev) => !prev)}
       >
         <FontAwesomeIcon
