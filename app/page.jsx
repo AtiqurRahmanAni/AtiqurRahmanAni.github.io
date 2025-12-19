@@ -7,7 +7,7 @@ const Home = () => {
       <div className="text-justify text-lg mt-6 md:mt-0">
         <p className="font-medium text-lg">Hello!👋</p>
         <p className="mt-3">
-          This is Md Atiqur Rahman. I am a Junior Python Developer at{" "}
+          This is Md Atiqur Rahman. I am a Python Developer at{" "}
           <a
             href="https://www.filerskeepers.co/"
             className="text-[#52adc8] font-semibold"

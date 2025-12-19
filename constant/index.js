@@ -83,7 +83,7 @@ export const connectItems = [
 
 export const experienceItems = [
   {
-    position: "Junior Python Developer",
+    position: "Python Developer",
     department: "",
     organization: "filerskeepers",
     organizationSite: "https://filerskeepers.co",
@@ -95,7 +95,7 @@ export const experienceItems = [
     department: "Department of Computer Science and Engineering",
     organization: "Ahsanullah University of Science and Technology",
     organizationSite: "https://aust.edu",
-    duration: "Duration: April 2024 - March 2025",
+    duration: "Duration: April 2024 - Present",
     organizationLogo: austLogo,
   },
   {
