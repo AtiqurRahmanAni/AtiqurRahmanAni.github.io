@@ -10,7 +10,7 @@ const Projects = () => {
         {projectItems.map((item, idx) => (
           <div
             key={idx}
-            className="max-w-sm bg-white border border-gray-200 rounded-lg shadow overflow-hidden flex flex-col pb-4"
+            className="max-w-sm bg-white border border-gray-200 rounded-lg shadow-sm overflow-hidden flex flex-col pb-4"
           >
             <iframe
               width="100%"

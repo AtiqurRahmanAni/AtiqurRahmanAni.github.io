@@ -12,7 +12,7 @@ import {
 const Profile = () => {
   return (
     <div className="md:self-start md:sticky md:top-24 flex gap-2 flex-row md:flex-col min-w-fit md:items-start items-center">
-      <div className="pointer-events-none relative h-[45px] w-[45px] rounded-full overflow-hidden md:h-[170px] md:w-[170px] md:border-2 md:border-gray-500">
+      <div className="pointer-events-none relative h-11.25 w-11.25 rounded-full overflow-hidden md:h-42.5 md:w-42.5 md:border-2 md:border-gray-500">
         <Image
           src={profileImg}
           fill
@@ -28,12 +28,12 @@ const Profile = () => {
           Md Atiqur Rahman
         </h4>
         <p className="text-[14px] text-gray-500 tracking-tighter lg:mt-1">
-          Junior Python Developer, filerskeepers
+          Python Developer, filerskeepers
         </p>
       </div>
       <div className="self-center ml-4">
         <Popover>
-          <PopoverButton className="text-xs text-gray-500 border border-gray-600 p-[4px] rounded-[4px] hover:bg-gray-600 hover:text-white transition-colors duration-200 md:hidden">
+          <PopoverButton className="text-xs text-gray-500 border border-gray-600 p-1 rounded-sm hover:bg-gray-600 hover:text-white transition-colors duration-200 md:hidden">
             Follow
           </PopoverButton>
           <Transition
@@ -54,7 +54,7 @@ const Profile = () => {
                     key={idx}
                     className="text-sm text-gray-500 mb-1 flex gap-x-2"
                   >
-                    <div className="w-[14px] h-[14px]">
+                    <div className="w-3.5 h-3.5">
                       <FontAwesomeIcon icon={item.icon} />
                     </div>
                     <a
@@ -75,8 +75,8 @@ const Profile = () => {
         <ul>
           {connectItems.map((item, idx) => (
             <li key={idx} className="text-sm text-gray-500 mb-1 flex gap-x-2">
-              <div className="w-[14px] h-[14px]">
-                <FontAwesomeIcon icon={item.icon} />
+              <div className="w-3.5 h-3.5">
+                <FontAwesomeIcon icon={item.icon} size="sm" />
               </div>
               <a
                 className="hover:underline underline-offset-1 cursor-pointer"
