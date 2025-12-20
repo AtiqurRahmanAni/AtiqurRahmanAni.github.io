@@ -40,14 +40,15 @@ const AbstractModal = ({ abstract, isOpen, closeModal }) => {
               leaveFrom="opacity-100 scale-100"
               leaveTo="opacity-0 scale-95"
             >
-              <DialogPanel className="w-full max-w-md rounded-xl bg-white p-6 md:max-w-lg">
+              <DialogPanel className="relative w-full max-w-md rounded-xl bg-white p-6 md:max-w-lg">
                 <div
                   className="absolute right-6 w-4 h-6 cursor-pointer group"
                   onClick={closeModal}
                 >
                   <FontAwesomeIcon
                     icon={faClose}
-                    className="w-full h-full text-gray-500 group-hover:text-gray-700 transition-colors duration-200"
+                    size="1x"
+                    className="text-gray-500 group-hover:text-gray-700 transition-colors duration-200"
                   />
                 </div>
                 <DialogTitle

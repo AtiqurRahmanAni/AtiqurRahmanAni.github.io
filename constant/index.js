@@ -177,7 +177,7 @@ export const honours = [
     title: (
       <>
         <span style={{ color: "#1FAB89", fontWeight: 600 }}>
-          Dean’s List of Honor (Ranked 4<sup>th</sup>)
+          Dean’s List of Honor
         </span>
         , Ahsanullah University of Science and Technology, 2023
       </>
@@ -387,4 +387,3 @@ export const languageCertifications = [
       "https://drive.google.com/file/d/12sUepbJNANTNCS3QheC7l3ZC09j5oEUP/view?usp=drive_link",
   },
 ];
-
